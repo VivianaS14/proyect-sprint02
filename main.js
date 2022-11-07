@@ -91,13 +91,20 @@ form.addEventListener('submit', (e) => {
     // Almacenamos en Local Storage validando los inputs
     let values = Object.values(newAnswer)
     let trueError = '';
-    for (let i = 0; i < values.length; i++) {
+
+    if (values[0] === "" || values[1] === "" || values[2] === "" || values[3] === "" ) {
+        trueError = 'Hay error'
+    } else {
+        trueError = 'No hay error'
+    }
+
+    /* for (let i = 0; i < values.length; i++) {
         if (values[i] === "") {
             trueError = 'Hay error'
         } else {
             trueError = 'No hay error'
         }
-    }
+    } */
 
     if (trueError === "Hay error") {
         errors();
