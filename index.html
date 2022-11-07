@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon-32x32.png">
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="text-container">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time.</p>
+        <p>
+          Watching scripted tutorials is great, but understanding how developers
+          think is invaluable.
+        </p>
+      </section>
+      <section class="form-container">
+        <button class="btn btn-try">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </button>
+        <section>
+            <form action="" id="form" class="inputs-container">
+              <label for="name">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="input"
+                  placeholder="First Name"
+                  autocomplete="off"
+                />
+                <div id="error-name" class="no-error error">
+                  <span>
+                    <img src="./assets/icon-error.svg" alt="Error">
+                  </span>
+                  <span class="error-message"><i>First Name cannot be empty</i></span>
+                </div>
+              </label>
+              <label for="lastName">
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  class="input"
+                  placeholder="Last Name"
+                  autocomplete="off"
+                />
+                <div id="error-last" class="no-error error">
+                  <span>
+                    <img src="./assets/icon-error.svg" alt="Error">
+                  </span>
+                  <span class="error-message"><i>Last Name cannot be empty</i></span>
+                </div>
+              </label>
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input"
+                  placeholder="Email Address"
+                  autocomplete="off"
+                />
+                <div id="error-email" class="no-error error">
+                  <span>
+                    <img src="./assets/icon-error.svg" alt="Error">
+                  </span>
+                  <span class="error-message"><i>Looks like this is not an email</i></span>
+                </div>
+              </label>
+              <label for="password">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="input"
+                  placeholder="Password"
+                  autocomplete="off"
+                />
+                <div id="error-pass" class="no-error error">
+                  <span>
+                    <img src="./assets/icon-error.svg" alt="Error">
+                  </span>
+                  <span class="error-message"><i>Password cannot be empty</i></span>
+                </div>
+              </label>
+                <button type="submit" id="btn-submit" class="btn">CLAIM YOUR FREE TRIAL</button>
+                <div class="terms-container">
+                  <span>By clicking the button, you are agreeing to our.</span>
+                  <span class="terms">Terms and Services</span>
+                </div>
+            </form>
+        </section>
+      </section>
+    </main>
+    <main class="main-container replies"></main>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
